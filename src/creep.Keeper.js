@@ -21,7 +21,7 @@ var creepKeeper = {
 
         for(var i = 0; i < roles.length; i++) {
             var creepsOfRole = _.filter(Game.creeps, (creep) => creep.memory.role == roles[i]);
-            if (creepsOfRole.length < desiredByRole[i]) {
+            if (creepsOfRole.length <= desiredByRole[i]) {
                 var newName = Game.spawns.Spawn1.createCreep(creepTemplates.workers[1], undefined, {role: roles[i]});
                 if (!(newName<0)) {
                     console.log('Spawning new ' + roles[i] + ': ' + newName);
