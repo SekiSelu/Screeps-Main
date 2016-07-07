@@ -11,7 +11,7 @@ var creepCleaner = require('creep.Cleaner');
 var creepTemplates = require('creep.Templates');
 
 var roles =         ['harvester', 'upgrader', 'builder', 'repairer'];
-var desiredByRole = [ 3, 6, 3, 1]; 
+var desiredByRole = [ 3, 6, 3, 0]; 
 
 var creepKeeper = {
     run: function() {

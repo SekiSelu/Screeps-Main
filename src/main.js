@@ -26,14 +26,11 @@ module.exports.loop = function () {
         var creep = Game.creeps[name];
         if(creep.memory.role == 'harvester') {
             roleHarvester.run(creep);
-        }
-        else if(creep.memory.role == 'upgrader') {
+        } else if(creep.memory.role == 'upgrader') {
             roleUpgrader.run(creep);
-        }
-        else if(creep.memory.role == 'builder') {
+        } else if(creep.memory.role == 'builder') {
             roleBuilder.run(creep);
-        }
-        else if(creep.memory.role == 'attacker') {
+        } else if(creep.memory.role == 'attacker') {
             roleAttacker.run(creep);
         } else if(creep.memory.role == 'repairer') {
             roleRepairer.run(creep);
