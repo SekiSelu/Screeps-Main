@@ -25,7 +25,12 @@ var creepKeeper = {
                 var newName = Game.spawns.Spawn1.createCreep(creepTemplates.workers[1], undefined, {role: roles[i]});
                 if (!(newName<0)) {
                     console.log('Spawning new ' + roles[i] + ': ' + newName);
-                }
+                } else if (roles[i] == 'harvester' && creepsOfRole.length == 0) {
+					newName = Game.spawns.Spawn1.createCreep(creepTemplates.workers[0], undefined, {role: roles[i]});
+					if (!(newName<0)) {
+						console.log('Emergency spawning new baby ' + roles[i] + ': ' + newName);
+					}
+				}
             }
         }
         /*
