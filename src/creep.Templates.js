@@ -9,7 +9,7 @@
 
 var workers = [[WORK, CARRY, MOVE], [WORK, WORK, CARRY, CARRY, MOVE, MOVE]];
 var generic = [[WORK, CARRY, MOVE], [WORK, WORK, CARRY, CARRY, MOVE, MOVE]];
-var fighter = [[MOVE,MOVE,MELEE_ATTACK,MELEE_ATTACK]];
+var fighter = [[MOVE,MOVE,ATTACK,ATTACK]];
 
 module.exports = {
     workers
