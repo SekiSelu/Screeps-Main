@@ -7,7 +7,8 @@
  * mod.thing == 'a thing'; // true
  */
 
-var workers = [[WORK, CARRY, MOVE, MOVE], [WORK, WORK, CARRY, CARRY, MOVE, MOVE]];
+var workers = [[WORK, CARRY, MOVE], [WORK, WORK, CARRY, CARRY, MOVE, MOVE]];
+var generic = [[WORK, CARRY, MOVE], [WORK, WORK, CARRY, CARRY, MOVE, MOVE]];
 
 module.exports = {
     workers
