@@ -17,8 +17,8 @@ var roleHarvester = {
                                 structure.structureType == STRUCTURE_SPAWN ||
                                 structure.structureType == STRUCTURE_TOWER ||
 								structure.structureType == STRUCTURE_STORAGE) &&
-									(structure.energy && (structure.energy < structure.energyCapacity) ||
-									 structure.store && (structure.store[RESOURCE_ENERGY] < structure.storeCapacity));
+									(structure.energy != undefined && (structure.energy < structure.energyCapacity) ||
+									 structure.store != undefined && (structure.store[RESOURCE_ENERGY] < structure.storeCapacity));
                     }
             });
             if(targets.length > 0) {
